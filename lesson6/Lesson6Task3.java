@@ -8,8 +8,12 @@ public class Lesson6Task3 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
-            System.out.println("Введите размер массива");
-            int size = Integer.parseInt(bufferedReader.readLine());
+            System.out.println("Введите размер массива или нажмите Enter для завершения программы");
+            String s = bufferedReader.readLine();
+            if (s.equals("")){
+                break;
+            }
+            int size = Integer.parseInt(s);
             System.out.println("Введите числа через Enter");
             Integer[] massiv = new Integer[size];
             for (int i = 0; i < massiv.length; i++) {

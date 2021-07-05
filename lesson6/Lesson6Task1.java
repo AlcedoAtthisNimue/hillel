@@ -10,8 +10,11 @@ public class Lesson6Task1 {
         int var = 6;
 
         while (true) {
-            System.out.println("Введите номер билета (шесть цифр)");
+            System.out.println("Введите номер билета (шесть цифр) или нажмите Enter для завершения программы");
             String s = bufferedReader.readLine();
+            if (s.equals("")){
+                break;
+            }
             String [] strings = s.split("");
             if (strings.length != var) {
                 System.out.println("Неправильное количество цифр в номере билета");

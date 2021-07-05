@@ -8,8 +8,11 @@ public class Lesson6Task2 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
-            System.out.println("Введите числа через пробел");
+            System.out.println("Введите числа через пробел или нажмите Enter для завершения программы");
             String s = bufferedReader.readLine();
+            if (s.equals("")){
+                break;
+            }
             String[] strings = s.split(" ");
             Integer[] massiv = new Integer[strings.length];
             for (int i = 0; i < strings.length; i++) {
