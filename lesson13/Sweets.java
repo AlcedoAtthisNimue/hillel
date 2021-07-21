@@ -14,7 +14,7 @@ public class Sweets {
         this.calories = calories;
         this.weight = weight;
     }
-    public static int calcWeight(Sweets[] arr){
+    public int calcWeight(Sweets[] arr){
         int result=0;
         for (Sweets item : arr){
             result += item.getWeight();

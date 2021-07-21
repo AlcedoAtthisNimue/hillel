@@ -13,6 +13,6 @@ public class Main {
         Sweets[] arr = {caramelCandies, gingerSnap, oatmealCookies, toffee, chocolateCandies,
                 glazedMarshmallow, unglazedMarshmallow};
 
-        System.out.println("Масса новогоднего подарка " + Sweets.calcWeight(arr) + " грамм.");
+        System.out.println("Масса новогоднего подарка " + toffee.calcWeight(arr) + " грамм.");
     }
 }
