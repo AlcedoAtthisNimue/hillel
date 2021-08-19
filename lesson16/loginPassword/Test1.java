@@ -23,9 +23,8 @@ public class Test1 {
     }
 
     public static void main(String[] args) {
-        Test1 t = new Test1();
         try {
-            t.checkLoginPassword("djfhdhjdfakdj", "GfccDjhl", "GfccDjhl");
+            checkLoginPassword("djfhdhjdfakdj", "GfccDjhl", "GfccDjhl");
         } catch (WrongLoginException e) {
             System.out.println(e.getMessage());
         } catch (WrongPasswordException e) {
